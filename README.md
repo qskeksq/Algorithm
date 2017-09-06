@@ -6,30 +6,29 @@
 
 ```java
 public static long sum(int limit, int d) {
-		int count = limit/d;
-		return count*(2*d+(count-1)*d)/2;
+	int count = limit/d;
+	return count*(2*d+(count-1)*d)/2;
 }
 ```
 ```java
 public static long sumEven(int max) {
-		return ((2+max)/2)*(max/2);
+	return ((2+max)/2)*(max/2);
 }
 ```
 ```java
 public static long sumOdd(int max) {
-		int count = (1+max)/2;
-		return count*count;
+	int count = (1+max)/2;
+	return count*count;
 }
 ```
 ```java
 public static long sumOddOrEven(int max) {
-		int oddOrEven = max%2;
-		switch(oddOrEven) {
-			case 0: return ((2+max)/2)*max/2;
-			case 1: return ((1+max)/2)*((1+max)/2);
-		}
-		return 0;
+	int oddOrEven = max%2;
+	switch(oddOrEven) {
+		case 0: return ((2+max)/2)*max/2;
+		case 1: return ((1+max)/2)*((1+max)/2);
+	}
+	return 0;
 }
 ```
-
 ```

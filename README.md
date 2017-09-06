@@ -59,6 +59,25 @@ public int[] getLottoNumbers() {
 }
 ```
 
+```java
+/**
+ * 리스트를 이용하는 경우
+ */
+public List<Integer> getLottoNumber2(){
+	List<Integer> result = new ArrayList<>();
+	Set<Integer> treeSet = new TreeSet<>();
+	Random random  = new Random();
+	for(; 6>treeSet.size();) {
+		treeSet.add(random.nextInt(45)+1);
+	}
+	Iterator<Integer> iterator = treeSet.iterator();
+	for(int i=0; i<treeSet.size(); i++) {
+		result.add(iterator.next());
+	}
+	return result;
+}
+```
+
 > 아나그램
 
 ```java
